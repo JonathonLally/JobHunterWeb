@@ -15,14 +15,21 @@ namespace JobHunterWeb.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "A C# .NET Solution to Job Searching";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Me";
+
+            return View();
+        }
+
+        public ActionResult Search()
+        {
+            ViewBag.Message = " Job Search";
 
             return View();
         }
