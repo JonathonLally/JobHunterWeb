@@ -33,5 +33,11 @@ namespace JobHunterWeb.Controllers
 
             return View();
         }
+
+        //All Code here should be in Search Controller, Move at some point
+        public void TestButton(object sender, EventArgs e)
+        {
+            Console.WriteLine("Testing Button");
+        }
     }
 }

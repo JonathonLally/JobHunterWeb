@@ -5,7 +5,7 @@
 <div class="jumbotron">
     <h1>Job Hunter</h1>
     <p class="lead">.NET web application to search, filter, and record job postings.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Start Search &raquo;</a></p>
+    <p>@Html.ActionLink(HttpUtility.HtmlDecode("Start Search &raquo;"), "Search", "Home", null, new { @class ="btn btn-primary btn-lg" })</p>
 </div>
 
 <div class="row">
@@ -15,7 +15,8 @@
             Search from multiple job posting websites.  Choose which sites and what parameters
             to search.  Record postings and track recent positions added.  Combine into one search.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>@Html.ActionLink("Search", "Search", "Home")
+        <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
         <h2>Record your Applications</h2>
